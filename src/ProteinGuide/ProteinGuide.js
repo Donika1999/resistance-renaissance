@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "../Styles/proteinGuide.css";
 import { Row, Col, Select, InputNumber, Typography, Radio } from "antd";
-
+import DnD from "../dnd/DnD";
 const { Title } = Typography;
 
 function ProteinGuide() {
@@ -132,7 +132,7 @@ function ProteinGuide() {
               </Title>
             </Col>
             <Col>
-              <Title level={2}></Title>
+              <DnD />
             </Col>
             <Col>{}</Col>
             {/* <Col span={6}>{<MealGuide />}</Col>
