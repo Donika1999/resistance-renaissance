@@ -1,0 +1,20 @@
+"foodItem":{
+  "name": "Paneer",
+  "qty": "100",
+  "qty_unit": "g",
+  "type": "veg",
+  "protein": "18",
+  "protein_unit": "g",
+}
+
+
+foodItems = [
+  "paneer": {
+    "qty": "100",
+    "qty_unit": "g",
+    "type": "veg",
+    "protein": "18",
+    "protein_unit": "g",
+  },
+  
+]
