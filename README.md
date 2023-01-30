@@ -4,9 +4,9 @@
 
 ### Nutrition
 1. Protein Calculator
-    a. Input: Gender, Weight, Body Fat %
-    b. Output: Daily Protein in grams
-    c. Sample meal breakdown
+    * Input: Gender, Weight, Body Fat %
+    * Output: Daily Protein in grams
+    * Sample meal breakdown
 
 2. Calorie Calculator
 
