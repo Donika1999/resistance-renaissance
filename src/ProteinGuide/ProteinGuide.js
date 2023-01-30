@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import "../Styles/proteinGuide.css";
 import { Row, Col, Select, InputNumber, Typography, Radio } from "antd";
-import DnD from "../dnd/DnD";
+import MealPlan from "../mealPlan/MealPlan";
+
 const { Title } = Typography;
 
 function ProteinGuide() {
@@ -132,7 +133,7 @@ function ProteinGuide() {
               </Title>
             </Col>
             <Col>
-              <DnD />
+              <MealPlan />
             </Col>
             <Col>{}</Col>
             {/* <Col span={6}>{<MealGuide />}</Col>
