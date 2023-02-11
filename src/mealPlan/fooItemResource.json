@@ -1,0 +1,29 @@
+[
+  {
+    "id": "F1",
+    "title": "Egg",
+    "type": "Eggetarian",
+    "proteinContentPerUnit": 6,
+    "defaultqty": 2,
+    "unit": "pc",
+    "priority": 1
+  },
+  {
+    "id": "F2",
+    "title": "Paneer",
+    "type": "Vegetarian",
+    "proteinContentPerUnit": 0.18,
+    "defaultqty": 100,
+    "unit": "g",
+    "priority": 2
+  },
+  {
+    "id": "F3",
+    "title": "Chicken Breast",
+    "type": "Nonvegetarian",
+    "proteinContentPerUnit": 0.3,
+    "defaultqty": "200",
+    "unit": "g",
+    "priority": 3
+  }
+]
