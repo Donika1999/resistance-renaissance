@@ -1,3 +1,138 @@
 .workoutPlan {
-  background-color: red;
+  background-color: #00040f;
+  width: 100%;
+  overflow: hidden;
+  font-family: "Poppins", sans-serif;
+  color: white;
+  text-align: center;
+  padding: 50px;
+}
+
+#drop {
+  width: 112px;
+  margin-left: 0px;
+  padding-left: 0px;
+}
+
+#text {
+  padding-right: 180px;
+}
+
+.Plan {
+  padding: 30px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.box-width {
+  display: flex;
+  flex-direction: row;
+  padding: 20px 30px;
+  max-width: 1280px;
+  margin: 0px 40px;
+}
+
+.box-width h1 {
+  text-align: center;
+}
+
+.box-width p {
+  font-size: 22px;
+}
+
+.table-box {
+  margin: 50px auto;
+}
+
+.table-row {
+  display: table;
+  width: 80%;
+  margin: 10px auto;
+  font-family: "Poppins", sans-serif;
+  background: transparent;
+  padding: 12px 0;
+  color: #555;
+  font-size: 13px;
+  box-shadow: 0 1px 4px 0px rgba(0, 0, 50, 0.3);
+  border-radius: 10px;
+  width: 85%;
+}
+
+.table-head {
+  box-shadow: none;
+  color: #fff;
+  font-weight: 600;
+}
+
+/* .table-head .table-cell{
+    border-right: none;
+} */
+.table-cell {
+  display: table-cell;
+  width: 10%;
+  text-align: center;
+  padding: 4px 0;
+  border-right: 1px solid #d6d4d4;
+  vertical-align: middle;
+}
+
+.table-cell p {
+  margin: 0.8rem 0;
+  font-size: 16px;
+}
+
+.last-cell {
+  border-right: none;
+}
+
+.cont2{
+  background-color: #0b5ed7;
+}
+
+.bg {
+  background: linear-gradient(144.39deg,
+      #ffffff -278.56%,
+      #6d6d6d -78.47%,
+      #11101d 96.61%);
+}
+
+.gym {
+  padding: 30px 10px;
+}
+
+.notes {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 35px 70px;
+  padding: 2px 23px;
+  border-radius: 25px;
+}
+
+.bigline {
+  height: 310px;
+  width: 4px;
+  background-color: white;
+}
+
+.back {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.back a {
+  margin: 20px;
+  text-decoration: none;
+  color: white;
+  padding: 14px 20px;
+  border: 1px solid transparent;
+  background: #0b5ed7;
+  border-radius: 10px;
+}
+
+.video {
+  margin: 10px 20px;
 }
