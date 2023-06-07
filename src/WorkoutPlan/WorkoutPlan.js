@@ -16,8 +16,14 @@ function WorkoutPlan() {
   const [day7plan, setday7plan] = useState('Rest');
   const [Exercises, setExercises] = useState(["List here"]);
   const [description, setDescription] = useState([" "]);
+  const [videolink,setVideolink]=useState(["https://www.youtube.com/embed/ml6cT4AZdqI"])
   const exercises = Exercises.map((exercise) => {
-    return <li>{exercise}</li>;
+    return <li><Button onClick={() => {
+      axios.get(`http://localhost:4000/exercisevideo/${videolink}`).then(response => {
+        console.log(response);
+       setVideolink(response.data[0]);
+      }).err(err => console.log(err)); 
+    }} id="btn">{exercise}</Button></li>;
   });
   const handleSelect = (e) => {
     console.log(e);
@@ -162,7 +168,7 @@ function WorkoutPlan() {
           </div>
           {/* <div className="bigline"></div> */}
           <div className="video">
-            <iframe width="380" height="200" src="https://www.youtube.com/embed/ml6cT4AZdqI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <iframe width="380" height="200" src={videolink} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
           </div>
         </div>
 
