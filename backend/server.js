@@ -18,7 +18,6 @@ app.get('/:id',(req,res)=>{
 Workout.find({"days":req.params.id})
   .then(doc => {  
     doc[0].Workout_scheme.map(e=>{DayStructure.find({"_id":e}).then(doc=>arr.push(doc[0].name))});
-   arr.push(doc[0].name);
     setTimeout( function sayhello(arr){
       res.json(arr);
     },100,arr);
@@ -61,20 +60,20 @@ DayStructure.find({"name":req.params.id})
       
     })
     app.get('/exercisevideo/:id',(req,res)=>{
-      let arr=[];
-   Exercise.find({"name":req.params.id})
-      .then(doc => {  
-       arr.push(doc[0].youtube_link);
-        setTimeout( function sayhello(arr){
-          res.json(arr);
-        },100,arr);
+        let arr=[];
+     Exercise.find({"name":req.params.id})
+        .then(doc => {  
+         arr.push(doc[0].youtube_link);
+          setTimeout( function sayhello(arr){
+            res.json(arr);
+          },100,arr);
+          
+        })
+        .catch(err => {
+          console.log(err);
+        });
         
       })
-      .catch(err => {
-        console.log(err);
-      });
-      
-    })
 app.post('/',(req,res)=>{
  let newWorkout=new Workout(req.body);
 console.log(newWorkout);
@@ -116,6 +115,5 @@ app.post('/daystructure',(req,res)=>{
      console.log('unable to add');
  });
  })
-
 const port=4000;
 app.listen(port ,console.log(`server started on port ${port}`));
